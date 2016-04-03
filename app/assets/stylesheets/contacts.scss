@@ -1,0 +1,21 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.img {
+  height: 100px;
+  width:  100px;
+  border: dashed gray thin;
+  background-repeat: inherit;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+}
+.img_small {
+  height: 54px;
+  width:  54px;
+  border: groove lightgray thick;
+  background-repeat: inherit;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+}

@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td><%= @contact.name %></td>
+    <td><strong>Avatar:</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Phone:</strong></td>
+    <td><%= @contact.phone %></td>
+    <td rowspan="2"><%=image_tag @contact.avatar, class: 'img' %></td>
+  </tr>
+  <tr>
+    <td><strong>Email:</strong></td>
+    <td><%= @contact.email %></td>
+  </tr>
+  <tr>
+    <td><strong>Descargar:</strong></td>
+    <td><%= link_to 'PDF', contact_path(@contact, format: "pdf") %></td>
+  </tr>
+</table>
+<br><br>
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
+
